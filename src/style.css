@@ -1,0 +1,83 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+html {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    line-height: 1.4;
+    font-size: 100%;
+}
+body {
+    margin: 0;
+}
+h1 {
+    text-align: center;
+    font-size: 1.5rem;
+}
+.button {
+    background-color: #5863f8;
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin: 0;
+}
+.button svg {
+    fill: #fff;
+    width: 24px;
+    height: 24px;
+}
+input {
+    margin: 0;
+}
+#city {
+    padding: 8px;
+    border: 1px solid #5863f8;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+form {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+}
+.heute {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.grad::after {
+    content:"°";
+}
+.grad {
+    font-weight: 700;
+    margin: 0 8px;
+}
+.schatten {
+    filter: drop-shadow(10px 10px 12px rgba(0,0,0.5));
+
+}
+.row {
+    font-size: 1rem;
+}
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid black;
+    padding-top: 30px;
+    margin: 30px;
+}
+.wetter p {
+    /*flex: 1 1 auto;*/
+    flex-grow: 1;
+}
+.wochentage {
+    min-width: 36px;
+}
+
+@media (min-width: 960px) {
+    h1 {
+        font-size: 3rem;
+    } 
+}
