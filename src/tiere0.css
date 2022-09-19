@@ -1,0 +1,93 @@
+html {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+body {
+    margin: auto;
+    max-width: 700px;
+}
+h1 {
+    text-align: center;
+}
+.kasten {
+    margin: 1rem 10% 3rem 10%;
+    border: 1px solid black;
+    border-radius: 8px;
+    background-color: pink;
+}
+.schatten {
+    filter: drop-shadow(4px 2px 8px rgba(0,0,0.5));
+}
+
+.tierbild {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to top, #120763 0%, #df00fc 100%);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    padding-bottom: 0px;
+}
+.tierbild img {
+    width: 300px;
+    margin-bottom: -3px;
+}
+
+.test {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.tiername {
+    text-align: center;
+    background-color: dodgerblue;
+    padding: 1px;
+    color: white;
+    position: relative;
+}
+.tiername h2 {
+    text-shadow: 1px 1px 1px black;
+}
+
+.tierdata {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid black;
+}
+.frage {
+    min-width: 120px;
+    margin: 0 25% 0 10px;
+}
+.antwort {
+    flex: 1 1 auto;
+    /*flex-grow: 1;
+    border-left: 1px solid black;
+    padding-left: 20%;*/
+}
+
+.buttons {
+    width: 100%;
+    text-align: center;
+}
+a {
+    text-decoration: none;
+}
+#weiter, #zurueck {
+    background-color: cornflowerblue;
+    border: 2px solid blueviolet;
+    border-radius: 20px;
+    padding: 10px;
+    color: white;
+}
+#weiter:hover, #zurueck:hover {
+    background-color: deeppink;
+}
+
+.alter::after {
+    content:" Jahre";
+}
+
+@media (max-width: 500px) {
+    html {
+        font-size: 70%;
+    }
+}
