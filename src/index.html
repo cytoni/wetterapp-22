@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="app.js"></script>
+    <title>Tolles Wetter</title>
+  </head>
+  <body>
+    <h1 id="headline">Tolles Wetter</h1>
+    <div>
+      <form action="" method="get" id="formular">
+        <input
+          type="search"
+          name="city"
+          id="city"
+          required
+          autofocus
+          placeholder="Gib eine Stadt ein"
+        />
+        <button type="submit" title="Finden" class="button">
+          <img src="suche-icon.svg" />
+        </button>
+      </form>
+      <p class="error"></p>
+    </div>
+    <div class="heute">
+      <h2>Heute</h2>
+      <img src="10d@2x.png" alt="Wetter Icon" class="schatten" />
+      <p>Heiter bis Wolkig</p>
+      <div class="temperatur">
+        <span class="grad">20</span>
+        <span class="grad">22</span>
+      </div>
+    </div>
+    <div class="row">
+      <div class="card">
+        <h2 class="wochentage">Mo</h2>
+        <img src="10d@2x.png" alt="Wetter Icon" class="schatten" />
+        <p class="wetter">Heiter bis Wolkig</p>
+        <div class="temperatur">
+          <span class="grad min">20</span>
+          <span class="grad max">22</span>
+        </div>
+      </div>
+      <div class="card">
+        <h2 class="wochentage">Di</h2>
+        <img src="10d@2x.png" alt="Wetter Icon" class="schatten" />
+        <p class="wetter">Heiter bis Wolkig</p>
+        <div class="temperatur">
+          <span class="grad min">20</span>
+          <span class="grad max">22</span>
+        </div>
+      </div>
+      <div class="card">
+        <h2 class="wochentage">Mi</h2>
+        <img src="10d@2x.png" alt="Wetter Icon" class="schatten" />
+        <p class="wetter">Heiter</p>
+        <div class="temperatur">
+          <span class="grad min">20</span>
+          <span class="grad max">22</span>
+        </div>
+      </div>
+      <div class="card">
+        <h2 class="wochentage">Do</h2>
+        <img src="10d@2x.png" alt="Wetter Icon" class="schatten" />
+        <p class="wetter">Heiter bis Wolkig</p>
+        <div class="temperatur">
+          <span class="grad min">20</span>
+          <span class="grad max">22</span>
+        </div>
+      </div>
+      <div class="card">
+        <h2 class="wochentage">Fr</h2>
+        <img src="10d@2x.png" alt="Wetter Icon" class="schatten" />
+        <p class="wetter">Heiter bis Wolkig</p>
+        <div class="temperatur">
+          <span class="grad min">20</span>
+          <span class="grad max">22</span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
