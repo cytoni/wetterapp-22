@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+  width: 100%;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 100%;
+}
+
+.wrapper {
+  height: 100%;
+  width: 80%;
+  margin: auto;
+}
+
+.card {
+  border: 1px black dotted;
+  margin-top: 1rem;
+}
+
+.card img {
+  width: 100%;
+  display: block;
+}
+
+.card h2 {
+  background: #fff;
+  padding: 5px;
+}
+
+.row {
+  display: block;
+}

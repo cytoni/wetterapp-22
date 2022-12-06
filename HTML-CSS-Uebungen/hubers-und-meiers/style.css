@@ -1,0 +1,10 @@
+* {
+  box-sizing: border-box;
+}
+
+div {
+  min-height: 100px;
+  min-width: 100px;
+  border: 1px solid black;
+  margin: 5px;
+}

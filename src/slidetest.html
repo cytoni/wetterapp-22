@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      function before() {
+        document.getElementById("tierfoto").src = "hund.webp";
+        document.getElementById("message").innerHTML =
+          "Hii! GeeksforGeeks people";
+      }
+
+      function afterr() {
+        document.getElementById("tierfoto").src = "katze.webp";
+        document.getElementById("message").innerHTML =
+          "Bye! GeeksforGeeks people";
+      }
+    </script>
+  </head>
+  <body>
+    <h1 id="message">Hii! GeeksforGeeks people</h1>
+    <img id="tierfoto" src="hund.webp" />
+    <div class="button">
+      <a href="#" onclick="before();">Zurück</a>
+      <a href="#" onclick="afterr();">Weiter</a>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,111 @@
+@font-face {
+  font-family: 'Geomanist Bold';
+  src: url('fonts/geomanist-bold.woff2') format('woff2'),
+    url('fonts/geomanist-bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+:root {
+  font-family: 'Geomanist Bold', sans-serif;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+figure,
+figcaption {
+  margin: 0;
+}
+
+h1,
+h2 {
+  font-family: 'Geomanist Bold';
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 10rem;
+}
+
+figcaption {
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 5rem;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1;
+}
+
+/* Make images easier to work with */
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.box {
+  min-height: 400px;
+  max-width: 100%;
+  margin: auto;
+}
+
+.pink {
+  color: rgb(255, 45, 85);
+}
+
+.pink-background {
+  background: rgb(255, 45, 85, 0.3);
+}
+
+.green {
+  color: rgb(15, 75, 28);
+}
+
+.text-shadow-light {
+  text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
+}
+
+.green-background {
+  background: rgba(173, 255, 47, 0.3);
+}
+
+.yellow {
+  color: rgb(255, 213, 0);
+}
+
+.yellow-background {
+  background: rgb(255, 214, 10, 0.4);
+}
+
+.orange {
+  color: rgb(245, 99, 0);
+}
+
+.orange-background {
+  background: rgb(245, 99, 0, 0.4);
+}
+
+figure {
+  max-width: 400px;
+}

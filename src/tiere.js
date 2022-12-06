@@ -54,6 +54,16 @@ const animals = [
     return jahre < 0 ? NaN : jahre;
 }
 
+function alter(geburtstag) {
+  const age = Math.floor(
+    (Date.now() - new Date(geburtstag)) / (1000 * 60 * 60 * 24 * 365)
+  );
+  if (age <= 2) {
+    return `1 Jahr`;
+  }
+  return `${age} Jahre`;
+}
+
 /*let alta = new Date(2009, 11-1, 02+1);*/
 let alta = new Date(2009, 11-1, 02+1);
 console.log(getAlter(alta));
@@ -61,10 +71,15 @@ console.log(alta);
 console.log("alta");
 console.log(Date());
 
-  anatol=0;
-  if (anatol >= 0) {
+/* vor.addEventListener("click", vor)
+addEventListener("click", zur)
+ */
+
+  let anatol=0;
   function zur() {
     anatol--;
+    zur.removeAttribute("disabled")
+    if (anatol >= 0) {
     document.getElementById("tierfoto").src = "https://vorstadtcowboy.github.io/images/" + animals[anatol].name.toLowerCase() + ".webp";
     document.getElementById("name").innerHTML = animals[anatol].name;
     document.getElementById("species").innerHTML = animals[anatol].species;
@@ -72,6 +87,7 @@ console.log(Date());
     document.getElementById("race").innerHTML = animals[anatol].race;
     document.getElementById("birthday").innerHTML = animals[anatol].birthday;
   }
+}
   function vor() {
     anatol++;
     document.getElementById("tierfoto").src = "https://vorstadtcowboy.github.io/images/" + animals[anatol].name.toLowerCase() + ".webp";
@@ -81,8 +97,9 @@ console.log(Date());
     document.getElementById("race").innerHTML = animals[anatol].race;
     document.getElementById("birthday").innerHTML = getAlter(alta);
   }
-}
 
-else {
-  console.log("shit");
-}
+/* 
+const p = document.createElement("p");
+p.innerText = "Hallo";
+document.appendChild(p);
+ */

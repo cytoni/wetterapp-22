@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 100%;
+}
+
+h1 {
+  margin: 1rem 0;
+}
+
+section {
+  border-bottom: 1px solid #000;
+}
+
+.wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+section {
+  border-bottom: none;
+}
+
+.electric-purple {
+  background: #c200fb;
+}
+
+.raspberry {
+  background: #ec0868;
+}
+
+.ferrari-red {
+  background: #fc2f00;
+}
+
+.green {
+  background: green;
+}
+
+.black {
+  background: black;
+}
+
+.col {
+  height: 200px;
+  width: 200px;
+}
+
+.row {
+  background: yellow;
+}

@@ -1,0 +1,203 @@
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+  color:crimson;
+  background-color: aliceblue;
+  display: inline;
+  padding: 0 30 5 10;
+}
+h1:hover {
+  color: hotpink;
+}
+p {
+  background-color: pink;
+  width: 300px;
+  border: 2px solid black;
+}
+h1, p, a {
+    font-family: Verdana;
+}
+
+a:link {
+  color: green;
+  display: block;
+}
+a:hover {
+  color: blue;
+  text-decoration: none;
+}
+
+.gelb {
+  background-color: yellow;
+  margin-right: 10px;
+  display: inline-block;
+}
+.p-10 {
+  padding: 10px;
+}
+
+#eidie {
+  background-color: aqua;
+}
+#eidie:hover {
+  background-color:orchid;
+}
+
+.boxn {
+    width: 100%;
+    min-width: 150px;
+    min-height: 150px;
+    margin-top: 5 5 0 0;
+    background-color: aquamarine;
+}
+
+.erste {
+  background-color: turquoise;
+}
+.zweite {
+  background-color: deepskyblue;
+}
+.dritte {
+  background-color: hotpink;
+}
+.container {
+  /* width: 100%;
+   min-height: 200px; */
+   margin-top: 20px;
+   background-color: black;
+ }
+.clear::after,
+.clear::before {
+  display: block;
+  content: 'Hallo Content';
+  clear: both;
+}
+@media (min-width: 768px)  and (max-width: 1023px) {
+    html {background-color: violet;}
+}
+
+@media (min-width: 1024px) {
+    html {background-color:cornflowerblue; font-size: 16px}
+    .boxn {width: calc(33.333% - 10px); float: left; margin: 0 5px;}
+}
+
+@media (min-width: 400px) and (max-width: 600px) {
+    p, a {font-size: 10px;}
+    .boxn {display: inline-block;}
+}
+
+/* @media (min-width: 1024px) {
+    div {display: inline-block; width: 30%}
+} */
+
+#animation {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  transition: border-radius 1s 1s cubic-bezier(), width 1s linear, trasnform 1s 1s linear;
+  /*transition-timing-function: 0.6s cubic-bezier(0.16, 1, 0.3, 1);*/
+}
+#animation:hover {
+  background-color: blue;
+  width: 100%;
+  transform: translateX(200px);
+  border-radius: 50%;
+  transform: rotate(90deg) scale(5);
+}
+.move {
+  width: 200px;
+  height: 200px;
+  background-color: black;
+  animation-name: scale-easeOutBounce;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+@keyframes move {
+  0%{
+    transform: translateX(0%)
+  }
+  100%{transform: translateX(1000px);}
+
+}
+@keyframes scale-easeOutBounce {
+	0% {
+		transform: scale(1);
+    background-color: blue;
+	}
+
+	12% {
+		transform: scale(0.89);
+	}
+
+	24% {
+		transform: scale(0.56);
+	}
+
+	36% {
+		transform: scale(0.02);
+	}
+
+	54% {
+		transform: scale(0.25);
+    background-color: red;
+	}
+
+	74% {
+		transform: scale(0.02);
+	}
+
+	82% {
+		transform: scale(0.06);
+	}
+
+	92% {
+		transform: scale(0.01);
+	}
+
+	96% {
+		transform: scale(0.02);
+	}
+
+	100% {
+		transform: scale(0);
+	}
+
+}
+
+.gradient {
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(to right,#f46980 0%, #fc9700 100%);
+  animation-name: rotate;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  animation-direction: normal;
+  animation-delay: 1s;
+  border-radius: 50%;
+}
+
+@keyframes rotate {
+
+  0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	} 
+}
+
+.schriftverlauf {
+  background: linear-gradient(to right,#120763 0%, #df00fc 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: 400px;
+  font-size: 5rem;
+}

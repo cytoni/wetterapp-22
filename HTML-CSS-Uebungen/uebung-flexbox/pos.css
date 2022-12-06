@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 100%;
+}
+
+h1 {
+  margin: 1rem 0;
+}
+
+section {
+  border-bottom: 1px solid #000;
+}
+
+.wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+  min-height: 300px;
+}
+
+.row {
+  width: 100%;
+  min-width: 10px;
+  padding: 1rem 0;
+  min-height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row; /*Achsenrichtung column oder row-reverse.. */
+  background-color: yellow;
+  justify-content: flex-start; /*Platzverteilung auf der X-Achse*/
+  align-items: stretch; /*Platzverteilung auf der Y-Achse*/
+  gap: 10px;
+}
+
+.col {
+  min-width: 20px;
+  min-height: 20px;
+  flex-grow: 1;
+}
+
+.trolley-grey {
+  background: #7d7c84;
+  /*flex-grow: 1;*/
+  flex-basis: 70%;
+}
+
+.sea-green {
+  background: #2d93ad;
+  flex-basis: 24%;
+}
+
+.middle-red {
+  background: #de8f6e;
+}
+
+.black {
+  background: #000;
+}
+
+.orange {
+  background: orange;
+}
+
+.olive {
+  background: olive;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 50%;
+  /*flex: 1 1 50%; - Kurzschreibweise von grow, shrink, basis*/
+}
